@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UBS-Ic-qMC">
+                                <rect key="frame" x="20" y="28" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="8Gb-P6-ph6"/>
+                                    <constraint firstAttribute="height" constant="35" id="KkZ-4q-yUK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邓海滨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqf-Ze-mbo">
+                                <rect key="frame" x="63" y="28" width="39" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016.09.10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjm-oB-8Gi">
+                                <rect key="frame" x="63" y="47" width="58" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.50689102564102562" green="0.50689102564102562" blue="0.50689102564102562" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pd9-Ol-ynS" customClass="LMLKeywordLabel">
+                                <rect key="frame" x="30" y="77" width="260" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="hKY-QH-dlE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hKY-QH-dlE"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWF-kc-CYT" customClass="LMLKeywordLabel">
+                                <rect key="frame" x="26" y="264" width="264" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="oaE-YW-Od1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oaE-YW-Od1"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bjm-oB-8Gi" firstAttribute="leading" secondItem="UBS-Ic-qMC" secondAttribute="trailing" constant="8" id="4Ci-yq-bmm"/>
+                            <constraint firstItem="UBS-Ic-qMC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="8uq-5b-JaS"/>
+                            <constraint firstAttribute="trailing" secondItem="Pd9-Ol-ynS" secondAttribute="trailing" constant="30" id="CzG-mU-6pp"/>
+                            <constraint firstItem="Pd9-Ol-ynS" firstAttribute="top" secondItem="UBS-Ic-qMC" secondAttribute="bottom" constant="14" id="FgI-dq-evP"/>
+                            <constraint firstItem="Bjm-oB-8Gi" firstAttribute="top" secondItem="rqf-Ze-mbo" secondAttribute="bottom" constant="3" id="Fu8-6y-S5w"/>
+                            <constraint firstItem="UBS-Ic-qMC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="KPN-xz-WYc"/>
+                            <constraint firstItem="rqf-Ze-mbo" firstAttribute="leading" secondItem="UBS-Ic-qMC" secondAttribute="trailing" constant="8" id="MCQ-Yk-GoH"/>
+                            <constraint firstItem="VWF-kc-CYT" firstAttribute="top" secondItem="Pd9-Ol-ynS" secondAttribute="bottom" constant="166" id="MVG-0x-cRe"/>
+                            <constraint firstAttribute="trailing" secondItem="VWF-kc-CYT" secondAttribute="trailing" constant="30" id="ShV-3A-ngR"/>
+                            <constraint firstItem="VWF-kc-CYT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="YGL-ry-oFi"/>
+                            <constraint firstItem="rqf-Ze-mbo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gRN-JM-BZK"/>
+                            <constraint firstItem="Pd9-Ol-ynS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="rSG-9f-uvZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="content_label" destination="Pd9-Ol-ynS" id="Bie-2H-Stn"/>
+                        <outlet property="content_label2" destination="VWF-kc-CYT" id="KwT-DA-6Iq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="467"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="01.jpg" width="990" height="966"/>
+    </resources>
+</document>
